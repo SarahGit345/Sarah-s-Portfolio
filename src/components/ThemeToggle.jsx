@@ -32,14 +32,16 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden"
+        "fixed max-sm:hidden top-5 right-5 z-50 p-3 rounded-full transition-all duration-500",
+        "bg-white/70 dark:bg-gray-800/60 backdrop-blur-md shadow-lg",
+        "hover:scale-110 hover:shadow-purple-400/40 dark:hover:shadow-purple-500/50",
+        "focus:outline-none focus:ring-2 focus:ring-purple-400/50"
       )}
     >
       {isDarkMode ? (
-        <Sun className="h-6 w-6 text-yellow-300" />
+        <Sun className="h-6 w-6 text-yellow-300 transition-transform duration-500 rotate-180" />
       ) : (
-        <Moon className="h-6 w-6 text-blue-900" />
+        <Moon className="h-6 w-6 text-purple-700 transition-transform duration-500 -rotate-12" />
       )}
     </button>
   );

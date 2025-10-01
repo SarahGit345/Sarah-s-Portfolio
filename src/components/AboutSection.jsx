@@ -1,92 +1,58 @@
-import { Briefcase, Code, User } from "lucide-react";
-
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 px-4 relative">
-      {" "}
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary"> Me</span>
-        </h2>
+    <section
+      id="about"
+      className="py-24 px-4 relative bg-gradient-to-b from-blue-50 via-purple-50 to-white dark:from-gray-900 dark:via-purple-950 dark:to-gray-900 transition-colors duration-500"
+    >
+      <div className="container mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-start">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
-            </h3>
-
-            <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+        {/* Left Column: About Me & Personal Details */}
+        <div className="space-y-8">
+          {/* About Me */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+              About Me
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+              I’m <span className="font-semibold text-purple-600 dark:text-purple-400">Sarah</span>, a technology enthusiast with a strong passion for both hardware and software. I love designing and building projects that bridge the physical and digital worlds — from embedded systems, electronics, and IoT devices to software applications, AI models, and intelligent systems. My work spans hands-on experimentation with circuits and sensors, programming, machine learning, and developing real-world solutions that make a meaningful impact. I thrive on learning, problem-solving, and turning ideas into functional, innovative projects.
             </p>
-
-            <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
-                {" "}
-                Get In Touch
-              </a>
-
-              <a
-                href=""
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
-              >
-                Download CV
-              </a>
-            </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
-                  <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
-                </div>
+          {/* Personal Details */}
+          <div>
+            <h2 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+              Personal Details
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              Name: Sarah Thomas<br/>
+              Email: sarah.bijimon@gmail.com<br/>
+              Phone: +91 9663995652<br/>
+              Location: Bangalore, India
+            </p>
+          </div>
+        </div>
 
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
-                  <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
-                  </p>
-                </div>
-              </div>
-            </div>
+        {/* Right Column: Academic Background & Career Aspirations */}
+        <div className="space-y-8">
+          {/* Academic Background */}
+          <div>
+            <h2 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+              Academic Background
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              B.Tech in Electronics & Computer Engineering, Amrita Vishwa Vidyapeetham,Bangalore<br/>
+              Relevant Coursework: Embedded Systems, IoT, Artifical Intelligence and Machine Learning, Software Development,VLSI,Computer Networks
+            </p>
+          </div>
+
+          {/* Career Aspirations */}
+          <div>
+            <h2 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
+              Career Aspirations
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              To innovate at the intersection of hardware and software, building intelligent systems and smart solutions that create meaningful impact in technology and society.
+            </p>
           </div>
         </div>
       </div>
