@@ -1,4 +1,4 @@
-# Sarah T Portfolio Website
+# Sarah Thomas Portfolio Website
 
 Welcome to my personal portfolio website! This site showcases my skills, projects, and experience in **software, hardware, IoT, machine learning, and robotics**. It also highlights my passion for avionics, engines, and electronics, along with software development expertise.  
 
